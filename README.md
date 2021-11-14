@@ -12,13 +12,13 @@ To build/run containers:
 To take down containers:
 * type `docker-compose down`
 
-To see what containers are running:
+To see which containers are currently running:
 * type `docker ps`
 
 To stop a container:
 * type `docker stop <container_id>`
 
-To enter containers shell:
+To enter a containers shell:
 * type `docker exec -t -i <container_id> /bin/bash`
 
 To view logs from containers:
@@ -27,7 +27,7 @@ To view logs from containers:
 To remove all exited containers:
 * type `docker container prune`
 
-To remove all stashed container data:
+To remove all stashed container data (AKA start clean):
 * type `docker system prune -a`
 
 ## MySQL
