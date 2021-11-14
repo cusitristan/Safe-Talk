@@ -27,13 +27,16 @@ To view logs from containers:
 To remove all exited containers:
 * type `docker container prune`
 
+To remove all stashed container data:
+* type `docker system prune -a`
+
 ## MySQL
 The apps database runs off MySQL which is hosted separately on a container.
 
 Database credentials: 
 * password - root
 * username - root
-* database name - 
+* database name - safedb
 
 To access MySQL commandline client enter mysql container shell then:
 * type `mysql -u root -proot`
