@@ -1,8 +1,8 @@
-# safe-talk
+# Safe-Talk
 Security Engineering Final Project - A secure messaging service written in python
 
 ## Docker
-This project is run on docker containers. You will need to have docker installed to the run code.
+This project is run with docker containers. You will need to have docker installed to the run code.
 
 Open terminal/cmd and cd to main directory where the docker-compose.yml file is. 
 
