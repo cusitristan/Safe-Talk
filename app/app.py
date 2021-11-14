@@ -5,7 +5,7 @@ try:
     host="mysql",
     user="root",
     password="root",
-    database="courses"
+    database="safedb"
   )
 except:
   print("Could not connect to MySQL, sleeping 30 sec then trying again")
@@ -15,10 +15,11 @@ except:
       host="mysql",
       user="root",
       password="root",
-      database="mydb"
+      database="safedb"
     )
   except:
     print("Could not connect to MySQL after 30sec")
+    exit()
     
 mycursor = mydb.cursor()
 
