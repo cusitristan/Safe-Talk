@@ -1,5 +1,7 @@
 import mysql.connector
 import time
+#try connect, if it doesnt work wait 30 sec and try again 
+#(this gives db container to boot up)
 try:
   mydb = mysql.connector.connect(
     host="mysql",
@@ -20,7 +22,7 @@ except:
   except:
     print("Could not connect to MySQL after 30sec")
     exit()
-    
+#create cursor which is used to query and itterate results
 mycursor = mydb.cursor()
 
 mycursor.execute("SELECT * FROM users;")
