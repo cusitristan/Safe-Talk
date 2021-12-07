@@ -59,7 +59,7 @@ To access MySQL commandline client enter mysql container shell then:
 
 ## Architecture
 We have a simple client/server architecture. The software is all bundled in a Docker-Compose setup which allows for easy deployment on any machine without worrying about depenencies. Below is a diagram of the basic architecture structure:
-![alt text](https://gitlab.csc.uvic.ca/courses/2021091/SENG360/teams/group-27/safe-talk/-/raw/main/imgs/Architecture.png "Architecture Diagram")
+![alt text](https://github.com/cusitristan/python-mysql-docker/blob/main/imgs/Architecture.png?raw=true "Architecture Diagram")
 
 We also see that the server creates a thread for each client connection allowing for concurrent processessing of client requests
 ### Directory
@@ -86,8 +86,6 @@ imgs/
 Docker-compose.yml            #docker-compose config file
 README.md
  ```
-### Data Flow Diagram
-The [DFD](https://gitlab.csc.uvic.ca/courses/2021091/SENG360/teams/group-27/safe-talk/-/blob/main/imgs/Safe-talk_DFD_STRIDE_report.htm) can be found inside the imgs folder inside the 'Safe-talk_DFD_STRIDE_report.htm' file. Within you will also find a STRIDE security report based on the DFD. To view the report you'll have to download it and open it with a browser since Gitlab shows the raw html code.
 
 
 ### Communication
@@ -290,5 +288,4 @@ Users are authenticated by using the Argon2 password hashing algorithm. When cre
 - clients must be in the same docker network to connection
 - no unit tests
 
-## Presentation link
-https://drive.google.com/file/d/1rzMQ_zcMENEA7hI8FQuwqeNm-SPQU1Xq/view?usp=sharing
+
