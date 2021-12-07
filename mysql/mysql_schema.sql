@@ -7,10 +7,6 @@ SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE=`ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,N
 -- -----------------------------------------------------
 -- Schema safedb
 -- -----------------------------------------------------
-
--- -----------------------------------------------------
--- Schema safedb
--- -----------------------------------------------------
 CREATE SCHEMA IF NOT EXISTS `safedb` DEFAULT CHARACTER SET utf8 ;
 USE `safedb` ;
 
@@ -20,7 +16,7 @@ USE `safedb` ;
 CREATE TABLE IF NOT EXISTS `safedb`.`users` (
   `user_id` INT NOT NULL AUTO_INCREMENT,
   `username` VARCHAR(45) NULL,
-  `password` VARCHAR(45) NULL,
+  `password` VARCHAR(100) NULL,
   PRIMARY KEY (`user_id`),
   UNIQUE INDEX `user_id_UNIQUE` (`user_id` ASC) VISIBLE)
 ENGINE = InnoDB;
@@ -32,3 +28,6 @@ SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
 
 INSERT INTO users (username, password) VALUES ('test1', 'password1');
 INSERT INTO users (username, password) VALUES ('test2', 'password2');
+INSERT INTO users (username, password) VALUES ('bob', '$argon2id$v=19$m=102400,t=2,p=8$9GGUzFE9zu9fCKGN2inBcg$l8GWjhG3lAW8USexAvObXA');
+INSERT INTO users (username, password) VALUES ('alice', '$argon2id$v=19$m=102400,t=2,p=8$c7vMBhoZr2edXggwqlwt5g$ADjOT/uFmZTww1+mMh5zNg');
+
