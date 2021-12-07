@@ -288,4 +288,7 @@ Users are authenticated by using the Argon2 password hashing algorithm. When cre
 - clients must be in the same docker network to connection
 - no unit tests
 
-
+# Creators
+[Tristan Cusi](https://github.com/cusitristan) <br />
+[Braidon Joe](https://github.com/braidonj) <br />
+[Riley Raso](https://github.com/RileyJRaso) <br />
